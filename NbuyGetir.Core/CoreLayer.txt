@@ -1,0 +1,14 @@
+﻿-> Bu katman, diğer tüm katmanaları besleyen, Abstract Class, Base Class, Interfaces gibi ana şablonların uygulandığı bir katman olup, tüm katmanlar bu katmandan faydalanabilir.
+-> Uygulamanın ilk değiştirmelerini bu katman üzerinden yapıp, diğer katmanlara ait implementasyonları yapacağız.
+
+-> Bu katman diğer katmanlardan farklı olarak "Cross Cutting" katman olarak isimlendirilir. Diğer katmanlar uygulamanın belirli bir kısmına ait, kendileri ile ilgili sorumlulukları yerine getirirken, bu katmanda herhangi bir sorumluluk prensibi bulunmamaktadır. Sadece ilgili katmanlara ait base yapısı oluşturulur. Oluşturulan base yapısının üstüne diğer katmanlar oluştururlur.
+
+-> BaseEntity, IEntity, IRepository, IDomainEvent, IDomainService, IApplicationService, IEmailSender, ISMSSender, INotification etc. gibi tüm implementasyonların base class ı burada bulunacaktır.
+
+(Seperation of Concerns)
+
+--> UI(User Interface) dediğimiz FrontEnd katmanı ile iş isteği başlar(HTML,CSS,JS). Kullanıcı ile uygulamanın tasarımsal olarak etkileşime geçtiği katman. FrontEnt developerların katmanı(Mobile App, Web App etc. olabilir).
+
+-> UI (Jquery,ReactJS,Angular,Vue,Spa uygulamalar bulunabiliri) => Presentation (API,WEB,MVC,Desktop (Backend Katmanı)).
+
+-> Application (Gelen isteklerin yönlendirildiği ilgili servislere aktarıldığı katman) => Infrastructure, Domain veya Persistance katmanına bağlar. Application katmanı diğer 3 alt katmanın birbirleri ile iletişimde bulunmasını sağlar. 

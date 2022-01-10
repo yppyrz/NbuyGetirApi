@@ -1,0 +1,18 @@
+Bu katman veri iþlemlerini üstlenen katmandýr. EF CORE, SQL Server, Dapper, NHibernate gibi veri katmanýný ilgilendiren teknolojilere ait kodlarý bu katmanda kullanacaðýz. Biz bu katmanda veri tabaný olarak SQL Server kullanýrken, ORM tool olarak EF Core ile geliþtirme yapacaðýz.
+
+EF ile alakalý DbContext sýnýflarý, Configurations, Migrations gibi tüm iþlemler bu katman altýnda yapýlýp api projesine baðlanacaktýr.
+
+Bu katman, ClassLibrary projesi olarak açýlacak olup sadece içerisinde class barýndýracaktýr.(View Controller Action gibi alanlar olmaz)
+
+Kullanýlacak olan altyapý teknolojisine ait EFCore adýnda bir klasör açýyoruz. Baþka bir teknoloji entegre edilmek istendiðinde, o teknolojiye ait klasör açýlmalý.
+
+Dapper klasörü içerisine, Dapper ile verilerin sql bazlý sorgulanmasý iþlemleri yapýlacaktýr.
+
+MongoDb ise sistemdeki kullanýcýlarýn bilgilerini json formatýnda saklamak için kullanýlacak.
+
+EfCore projesi altýnda:
+
+-> Configurations: Ýçerisinde entity'lerin database tablo ayarlarýný (Primary_Key, uzunluk,FK,uniqe Key etc.) yapacaðýz.
+-> Migrations: Entity'ler ile ilgili migrations iþlemleri
+-> Contexts: Uygulamayý OrderContext, ProductCatalogContext gibi farklý contextlere ayýrýp, ayný database üzerinden çalýþma saðlayacaðýz.
+-> Repositories: Ýlgili entity'ler üzerinden veri çekme operasyonlarý için olacak.

@@ -1,0 +1,5 @@
+-> Domain Layer: Uygulamadaki Entityleri, Domain Servisleri, Eventlerin ve Repository Interface'lerinin bulunduðu katmandýr. Bu katman uygulamanýn en önemli katmaný olup, diðer katmanlar bu katmandan beslenir, bu katmandaki sýnýflarý kullanabilir. Bu katman "Core" katmaný dýþýnda hiçbir katmana baðýmlý deðildir.
+
+-> Ayný anda bir sipariþ içerisinde ayný üründen belirli bir miktardan fazla sipariþ verilemesin, gibi kurallarýn düzenleneceði Layer'dýr.
+
+-> Lojik iþlemlerini Domain Servisler üstlenecektir.

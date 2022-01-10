@@ -1,0 +1,21 @@
+-> Bu katman, Controller'dan gelen iþ isteklerinin koordinasyonunu yönetimini yapan katman olup bu katmandaki Application Servisler ile uygulamanýn diðer katmanlarýndaki servisler bu katman içerisinde birbirleri ile haberleþir. Yani bu katmanýn görevi, gelen iþ isteklerinin kullaným durumlarýna göre, arka tarafta ne tür iþlemlerin çaðýrýlacaðýný koordine eder(Gelen iþi uygun katmana, uygun servise iletmek bu katmanýn görevi).
+
+-> Controller = Kampanyalý ürünlerin hepsinin verilerini çekmek istediðinde; Bütün kampanyalý ürünlerin, düzgün bir logic'de listelenmesi için gerekli olan tüm servislerin çaðýrýlmasý bu katmanýn görevi.
+
+// Son 10 sipariþi getir. Ýstendiði zaman, DTO (Data Transfer Object){"name":"sipariþ adý", "date":"Sipariþin tarihi", etc.}, bu katman tarafýndan oluþturulup gönderilecek.
+
+-> Bu katmanda gelen iþ isteðine göre verinin yani Input Modelin doðru formatta olup olmadýðý validasyonu , doðru formatta ise yapýlacak olan iþlemleri çaðýrýlmasý, - ilgili servilserin çaðýrýlmasý - bu operasyonlar sonrasý yapýlacak iþlemler, mail, sms, bildirim vb operasyonlarýn yönetimi saðlanacak.
+
+-> Services => Gelen iþ isteklerinin Requestlerini yakalayan ve iþleyen servislerimiz.
+
+-> DTO => FrontEnd tarafýndan gelen modeller veya frontend projesine gönderdiðimiz modeller
+
+-> Commands => Uygulama içerisine gelen iþ isteklerini temsil eden komuy sýnýflarý(PostRequest)
+
+-> Queries => Uygulama içerisindeki nesneleri Frontend tarafýna göndermekten sorumlu istek sýnýflarý(GetRequest)
+
+-> Exceptions => Uygulamanýn diðer katmanlara eriþmeden önceki hata durum yönetimleri için bu klasördeki sýnýflarý kullanacaðýz. UserNotAllow, OrderRejected gibi hatalar oluþturacaðýz.
+
+-> Bu katman Contoller içerisine yazýlan kodlarý temsil eden katmanýmýzdýr. Kodlar buraya yazýlýp, Contollerdan bu katman çaðýrýlacaktýr.
+
+-> Bu katmanýn kullanýlmasýndaki sebep, uygulama teknolojisinin deðiþmesi durumunda kodlarýmýzýn yeni teknolojiye aktarýlmasýnýn daha kolay olmasýný saðlamaktadýr.
