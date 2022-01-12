@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NbuyGetir.Domain.Models
 {
-    public class Category:Entity
+    public class Category:AuditableEntity
     {
         public string Name { get; set; }
 
@@ -50,6 +50,10 @@ namespace NbuyGetir.Domain.Models
             _subCategories.Add(category);
         }
     
+        /// <summary>
+        /// Kategori, en üst kategori değilse ve alt kategorisi yoksa ürün ekleyebilir.
+        /// </summary>
+        /// <param name="product"></param>
         public void AddProduct(Product product)
         {
             if (!IsTopLevel && _subCategories.Count() == 0)
