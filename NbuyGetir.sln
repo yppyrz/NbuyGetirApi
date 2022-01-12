@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dapper", "Dapper", "{8271DE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MongoDb", "MongoDb", "{C4244753-71C7-4531-8A9A-E358D3B1FFF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbuyGetir.EfCore", "NbuyGetir.EfCore\NbuyGetir.EfCore.csproj", "{C0014312-F55B-4A52-BB45-63ED1DCC9D5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NbuyGetir.EfCore", "NbuyGetir.EfCore\NbuyGetir.EfCore.csproj", "{C0014312-F55B-4A52-BB45-63ED1DCC9D5A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F7B6864D-CF84-4270-8CF7-725283400433}"
 	ProjectSection(SolutionItems) = preProject
@@ -26,16 +26,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastucture", "Infrastuct
 		InfrastructureLayer.txt = InfrastructureLayer.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbuyGetir.Domain", "NbuyGetir.Domain\NbuyGetir.Domain.csproj", "{E5AE3394-C7BF-495A-AEBB-EC2176652EBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NbuyGetir.Domain", "NbuyGetir.Domain\NbuyGetir.Domain.csproj", "{E5AE3394-C7BF-495A-AEBB-EC2176652EBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbuyGetir.Infrastructure", "NbuyGetir.Infrastructure\NbuyGetir.Infrastructure.csproj", "{A187B331-CC6D-4925-B91D-BD9695962875}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NbuyGetir.Infrastructure", "NbuyGetir.Infrastructure\NbuyGetir.Infrastructure.csproj", "{A187B331-CC6D-4925-B91D-BD9695962875}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C28D8C19-A7A5-4922-A430-C8474ADF585B}"
 	ProjectSection(SolutionItems) = preProject
 		ApplicationLayer.txt = ApplicationLayer.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbuyGetir.Application", "NbuyGetir.Application\NbuyGetir.Application.csproj", "{57C63E22-0545-442A-B421-E8388B89BC48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NbuyGetir.Application", "NbuyGetir.Application\NbuyGetir.Application.csproj", "{57C63E22-0545-442A-B421-E8388B89BC48}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{1823F822-AACD-4F41-AE0E-47545F65831A}"
 	ProjectSection(SolutionItems) = preProject
@@ -50,9 +50,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dekstop", "Dekstop", "{EEE2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{4B4EE948-9F58-4A98-BC94-257BEC3BA453}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbuyGetir.API", "NbuyGetir.API\NbuyGetir.API.csproj", "{D95C038B-44A5-4F85-88EF-6A48D8DFF191}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NbuyGetir.API", "NbuyGetir.API\NbuyGetir.API.csproj", "{D95C038B-44A5-4F85-88EF-6A48D8DFF191}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbuyGetir.Core", "NbuyGetir.Core\NbuyGetir.Core.csproj", "{DBA6690D-0DD4-4CD1-9345-B3B1699CF077}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NbuyGetir.Core", "NbuyGetir.Core\NbuyGetir.Core.csproj", "{DBA6690D-0DD4-4CD1-9345-B3B1699CF077}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D49A777A-AA9A-4475-89B4-372BBFDBA5C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbuyGetir.Common", "NbuyGetir.Common\NbuyGetir.Common.csproj", "{F9B78092-5A22-4C53-AAF5-39CBD6C47B35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,6 +88,10 @@ Global
 		{DBA6690D-0DD4-4CD1-9345-B3B1699CF077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBA6690D-0DD4-4CD1-9345-B3B1699CF077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBA6690D-0DD4-4CD1-9345-B3B1699CF077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B78092-5A22-4C53-AAF5-39CBD6C47B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B78092-5A22-4C53-AAF5-39CBD6C47B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B78092-5A22-4C53-AAF5-39CBD6C47B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B78092-5A22-4C53-AAF5-39CBD6C47B35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +109,7 @@ Global
 		{EEE22CB2-E889-4EC4-B5D2-4FB68A15B4DE} = {1823F822-AACD-4F41-AE0E-47545F65831A}
 		{4B4EE948-9F58-4A98-BC94-257BEC3BA453} = {1823F822-AACD-4F41-AE0E-47545F65831A}
 		{D95C038B-44A5-4F85-88EF-6A48D8DFF191} = {B1A19193-33A0-46D6-AE87-F444A6AD1D6E}
+		{F9B78092-5A22-4C53-AAF5-39CBD6C47B35} = {D49A777A-AA9A-4475-89B4-372BBFDBA5C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E69677C-9F77-48C0-B840-99CE46EC9295}

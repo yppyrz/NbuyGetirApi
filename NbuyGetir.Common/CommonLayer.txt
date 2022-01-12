@@ -1,0 +1,1 @@
+﻿Her uygulamada kullanabileceğimiz, Helper dediğimiz yapıları içerisinde barındıran. Herhangi bir teknoloji kaygısı barındırmayan, bütün katmanlar ile haberleşebilen (cross-cutting-layer) bir katmandır. Genelde içerisinde String, DateTime, Configuration gibi birçok method ve sınıf barındırır.
