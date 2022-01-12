@@ -13,7 +13,6 @@ namespace NbuyGetir.Domain.Models
         public string Name { get; private set; }
         public decimal UnitPrice { get; private set; } // alış fiyatı
         public decimal ListPrice { get; private set; } // satış fiyatı
-        public double DiscountAmount { get; private set; } = 0;
         public int Stock { get; private set; } // current stock
         public string Description { get; private set; } // 10x2, 1lt, 2kg vb.
         public string ImageBase64 { get; private set; }
